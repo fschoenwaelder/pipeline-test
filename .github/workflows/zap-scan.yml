@@ -36,13 +36,13 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: zap-html-report
-        path: zap_report.html
+        path: report_html.html
 
     - name: Upload ZAP JSON Report
       uses: actions/upload-artifact@v4
       with:
         name: zap-json-report
-        path: zap_report.json
+        path: report_json.json
 
     - name: Fail on High-Risk Alerts
       run: |
