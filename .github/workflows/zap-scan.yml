@@ -28,7 +28,7 @@ jobs:
         sleep 4  # Wartezeit, bis die App läuft
 
     - name: Run ZAP Full Scan
-      uses: zaproxy/action-full-scan@latest
+      uses: zaproxy/action-full-scan@v0.12.0
       with:
         target: 'http://localhost:4200'
         cmd_options: '-a'
